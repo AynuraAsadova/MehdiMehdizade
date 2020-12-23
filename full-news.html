@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="SSRİ PEA-nın ilk və son azərbaycanlı akademiki: Mehdi Mehdizadə" />
-    <title>Mehdi Mehdizadə</title>
-       
+    <title>Mehdi Mehdizadə</title>       
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -381,6 +378,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
      <script type="text/javascript">
+         document.title = document.getElementById("text_title").innerHTML;
         function fbs_click(width, height) {
             var leftPosition, topPosition;
             leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
@@ -389,7 +387,7 @@
                 leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition +
                 ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
             u = document.location.href;
-            t = document.getElementById("text_title").innerHTML;
+            t = document.title;
             window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t),
                 'sharer', windowFeatures);
             return false;
