@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehdi Mehdizadə</title>   
-
-    <meta property="og:type" content="article" />
-       
+    <title>Mehdi Mehdizadə</title>          
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -379,7 +376,7 @@
         var newsTitle = document.createElement('meta');
         newsTitle.setAttribute('property', 'og:title');
         newsTitle.content = textTitle;
-        document.getElementsByTagName('head')[0].appendChild(newsTitle);
+        document.getElementsByTagName('head')[0].append(newsTitle);
 
         var text = document.createElement('meta');
         text.setAttribute('property', 'og:description');
@@ -389,7 +386,7 @@
         var image = document.createElement('meta');
         image.setAttribute('property', 'og:image');
         image.content = img;
-        document.getElementsByTagName('head')[0].appendChild(image);
+        document.getElementsByTagName('head')[0].append(image);
     </script>
 
 
