@@ -387,10 +387,13 @@
         var textDescription = document.getElementById("text_description").innerHTML;
         var img = document.querySelector(".share_img").src;
 
-        $("#mtlink").attr("content", document.location);
+       (function changeMetaTag(){
+            $("#mtlink").attr("content", document.location);
             $("#mtdesc").attr("content", textDescription);
             $("#mttitle").attr("content", textTitle);
             $("#mtimg").attr("content", img);
+        })();
+            
     </script>
 
    
