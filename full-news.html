@@ -389,7 +389,7 @@
         var newsTitle = document.createElement('meta');
         newsTitle.setAttribute('property', 'og:title');
         newsTitle.content = textTitle;
-        document.getElementsByTagName('head')[0].append(newsTitle);
+        document.getElementsByTagName('head')[0].appendChild(newsTitle);
 
         var text = document.createElement('meta');
         text.setAttribute('property', 'og:description');
