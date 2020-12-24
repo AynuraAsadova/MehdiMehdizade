@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Mehdi Mehdizadə</title>     
+     <title></title>     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -359,7 +359,12 @@
     </footer>
 
     <script>
-        document.title = document.getElementById("text_title").innerHTML;
+        var textTitle = document.getElementById("text_title").innerHTML;
+        if (textTitle) {
+            document.title = textTitle;
+        } else {
+            document.title = "Mehdi Mehdizadə"
+        }
     </script>
     
     <script src="js/wow.js"></script>
