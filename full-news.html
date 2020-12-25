@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehdi Mehdizadə</title>   
-    <meta id="mtlink" property="og:url" content="" />
-    <meta id="mttitle" property="og:title" content="" />
-    <meta id="mtdesc" property="og:description" content=""/>
-    <meta id="mtimg" property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content="" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -388,11 +388,13 @@
         var img = document.querySelector(".share_img").src;
 
        
-            $("#mtlink").attr("content", document.location);
-            $("#mtdesc").attr("content", textDescription);
-            $("#mttitle").attr("content", textTitle);
-            $("#mtimg").attr("content", img);
-       
+           (function changeMetaTag(){
+            $("meta[property='og:url']").attr("content", document.location);
+            $("meta[property='og:description']").attr("content", textDescription);
+            $("meta[property='og:title']").attr("content", textTitle);
+            $("meta[property='og:image']").attr("content", img);
+        })();
+            
             
     </script>
 
