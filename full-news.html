@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehdi Mehdizadə</title>   
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -23,29 +19,6 @@
     <link rel="stylesheet" href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-     <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '775415016388889',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v2.10'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
 </head>
 
 <body>
@@ -260,8 +233,6 @@
             </div>
 
             
-             <button onclick="shareOverrideOGMeta(document.location, textTitle, textDescription, img)">Share</button>
-                          
              <div class="share">
                 <button class="button openshare-list__link--twitter" title="Twitter" data-sharer="twitter"
                     data-url="https://aynuraasadova.github.io/MehdiMehdizade/full-news.html"><span
@@ -402,33 +373,6 @@
      <script src="https://cdn.rawgit.com/OpenShare/openshare/develop/dist/openshare.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
   
-    <script>
-         
-       var textTitle = document.getElementById("text_title").innerHTML;
-var textDescription = document.getElementById("text_description").innerHTML;
-var img = document.querySelector(".share_img").src;
-
-function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription,
-    overrideImage) {
-    FB.ui({
-            method: 'share_open_graph',
-            action_type: 'og.likes',
-            action_properties: JSON.stringify({
-                object: {
-                    'og:url': overrideLink,
-                    'og:title': overrideTitle,
-                    'og:description': overrideDescription,
-                    'og:image': overrideImage
-                }
-            })
-        },
-        function (response) {
-            // Action after response
-        });
-};
-            
-    </script>
-
    
 </body>
 
