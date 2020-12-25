@@ -386,12 +386,12 @@
         var textTitle = document.getElementById("text_title").innerHTML;
         var textDescription = document.getElementById("text_description").innerHTML;
         var img = document.querySelector(".share_img").src;
-
+         document.title = textTitle;
        
            (function changeMetaTag(){
             $("meta[property='og:url']").attr("content", document.location);
             $("meta[property='og:description']").attr("content", textDescription);
-            $("meta[property='og:title']").attr("content", textTitle);
+            $("meta[property='og:title']").attr("content", document.title);
             $("meta[property='og:image']").attr("content", img);
         })();
             
